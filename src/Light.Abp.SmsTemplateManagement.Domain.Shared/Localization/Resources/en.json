@@ -1,0 +1,11 @@
+{
+  "culture": "en",
+  "texts": {
+    "SmsTemplateManagement": "SmsTemplateManagement",
+    "Permission:View": "Permission:View",
+    "Permission:Create": "Permission:Create",
+    "Permission:Update": "Permission:Update",
+    "Permission:Delete": "Permission:Delete",
+    "Permission:Read": "Permission:Read"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "SmsTemplateManagement": "短信模板",
+    "Permission:View": "查看",
+    "Permission:Create": "创建",
+    "Permission:Update": "更新",
+    "Permission:Delete": "删除",
+    "Permission:Read": "读取"
+  }
+}
