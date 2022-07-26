@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Threading.Tasks;
 using Volo.Abp.Application.Services;
 using Light.Abp.SmsTemplateManagement.Localization;
 using Light.Abp.SmsTemplateManagement.Permissions;
@@ -27,9 +28,9 @@ namespace Light.Abp.SmsTemplateManagement
         protected override string DeletePolicyName => AbpSmsTemplateManagementPermissions.SmsTemplate.Delete;
 
 
-        protected override IQueryable<SmsTemplate> CreateFilteredQuery(QuerySmsTemplateDto input)
+        protected override async Task<IQueryable<SmsTemplate>> CreateFilteredQueryAsync(QuerySmsTemplateDto input)
         {
-            IQueryable<SmsTemplate> queryable = Repository;
+            IQueryable<SmsTemplate> queryable = await Repository.GetQueryableAsync();
             if (!string.IsNullOrWhiteSpace(input.Filter))
             {
                 queryable = queryable.Where(x => x.Type.Contains(input.Filter) || x.TemplateCode.Contains(input.Filter) );

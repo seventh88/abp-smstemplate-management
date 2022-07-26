@@ -15,12 +15,12 @@ namespace Light.Abp.SmsTemplateManagement.EntityFrameworkCore
 
         public async Task<SmsTemplate> FindByTemplateCodeAsync(string templateCode)
         {
-            return await GetQueryable().FirstOrDefaultAsync(x => x.TemplateCode == templateCode);
+            return await (await GetQueryableAsync()).FirstOrDefaultAsync(x => x.TemplateCode == templateCode);
         }
 
         public async Task<SmsTemplate> FindByTypeAsync(string type, bool international)
         {
-            return await GetQueryable().FirstOrDefaultAsync(x => x.Type == type && x.International == international);
+            return await (await GetQueryableAsync()).FirstOrDefaultAsync(x => x.Type == type && x.International == international);
         }
     }
 }
