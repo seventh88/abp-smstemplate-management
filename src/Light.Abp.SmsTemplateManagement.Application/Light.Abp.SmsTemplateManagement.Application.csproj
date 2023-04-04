@@ -4,21 +4,21 @@
   <Import Project="..\..\common.props" />
   
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>Light.Abp.SmsTemplateManagement</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\net6.0\Light.Abp.SmsTemplateManagement.Application.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\net7.0\Light.Abp.SmsTemplateManagement.Application.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\net6.0\Light.Abp.SmsTemplateManagement.Application.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\net7.0\Light.Abp.SmsTemplateManagement.Application.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Volo.Abp.AutoMapper" Version="6.0.1" />
-    <PackageReference Include="Volo.Abp.Ddd.Application" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="7.1.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Update="Fody" Version="6.6.3">
+    <PackageReference Update="Fody" Version="6.6.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
