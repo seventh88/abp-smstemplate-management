@@ -13,6 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Light.Abp.SmsTemplateManage
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Light.Abp.SmsTemplateManagement.EntityFrameworkCore", "src\Light.Abp.SmsTemplateManagement.EntityFrameworkCore\Light.Abp.SmsTemplateManagement.EntityFrameworkCore.csproj", "{BE30C3E7-35DA-45C8-9441-E2E92A5AD7F7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00", "00", "{6F00BE7E-680A-4DBE-A0A3-2DF1CA7ECCB8}"
+	ProjectSection(SolutionItems) = preProject
+		common.props = common.props
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
